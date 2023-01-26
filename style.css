@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Luthon Southard serif";
+  src: url(font/Luthon\ Southard\ Serif.otf);
+}
+
+/*the navbar*/
+.horizontal-section {
+  margin: 0;
+  background-image: linear-gradient(
+    to right top,
+    #89d4dd,
+    #a5d8ef,
+    #c5dbf6,
+    #dfe0f5,
+    #f0e7f3,
+    #efe3f0,
+    #eedfec,
+    #eedbe8,
+    #e1c9e3,
+    #cdb9e0,
+    #b2abe0,
+    #8e9fdf
+  );
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.logo {
+  font-size: 65px;
+  padding-left: 20%;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.logo img {
+  width: 70px;
+  height: 80px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+.menu a {
+  padding: 0 40px;
+  font-size: 24px;
+  align-content: center;
+  color: black;
+}
+
+body {
+  font-family: "Luthon Southard serif";
+  overflow-x: hidden;
+  background: #f8f5f6;
+}
+
+/*main section */
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.img {
+  height: 200px;
+  width: 200px;
+}
+
+.intro {
+  padding-right: 25px;
+  font-size: 80px;
+  font-family: "Luthon Southard serif";
+}
+
+.sticky-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: sticky;
+  top: 20px;
+}
+
+.element-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.element {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.personal-img {
+  width: 50%;
+  height: 100vh;
+  margin: 0 20px 0 0;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.section {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  justify-content: start;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin-left: 10px;
+  transform: translateX(500%);
+  transition: transform 0.6s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-550%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background: #f8f5f6;
+}
+
+.work-title {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 0 20px;
+  font-size: 45px;
+  margin-top: 20px;
+}
+
+.working-list {
+  display: grid;
+  margin: 150px auto;
+  width: 400px;
+  height: 25px;
+  font-size: 24px;
+}
+
+.work-project:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.work-project {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-project:nth-of-type(odd) {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.work-img {
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+    63.25% 68.27% at 50% 50%,
+    #acdfeb 0%,
+    rgba(198, 207, 239, 0) 100%
+  );
+}
+
+.work-img img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.about-left {
+  height: auto;
+  padding-left: 80px;
+}
+
+.about-left p {
+  padding: 25px 25px 25px 0;
+  font-size: 24px;
+}
+
+.about-title {
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+
+.about-right {
+  display: grid;
+  justify-content: center;
+  background: linear-gradient(
+    to right top,
+    #89d4dd,
+    #a5d8ef,
+    #c5dbf6,
+    #dfe0f5,
+    #f0e7f3,
+    #efe3f0,
+    #eedfec,
+    #eedbe8,
+    #e1c9e3,
+    #cdb9e0,
+    #b2abe0,
+    #8e9fdf
+  );
+}
+
+.about-img {
+  margin: 80px;
+}
+
+.about-img h3 {
+  padding-bottom: 5px;
+}
+
+.profile-img {
+  width: 198px;
+  height: 237px;
+  background: radial-gradient(
+    63.25% 68.27% at 50% 50%,
+    #acdfeb 0%,
+    rgba(198, 207, 239, 0) 100%
+  );
+  border-radius: 90%;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: right;
+  height: 50vh;
+  background-color: #f8f5f6;
+}
+
+.contact-left {
+  font-size: 40px;
+  width: 750px;
+  text-align: right;
+  padding-top: 20px;
+}
+
+.contact-right {
+  margin: auto;
+  padding: 40px 0 0 10rem;
+}
+
+.contact-list {
+  font-size: 30px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact-list .contact-me {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+
+.contact-me:nth-of-type(odd) {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.contact-me i {
+  padding-right: 150px;
+}
